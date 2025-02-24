@@ -54,10 +54,8 @@ void loop() {
     lastDebounceTime = currentMillis;
     if (!buttonState) { // Button pressed (low due to pull-up)
       Serial.println("Button pressed!");
-
-      // ... your button press logic here (if desired)
     }
   }
 
-  lastButtonState = buttonState; // Update state after debounce check
+  lastButtonState = buttonState; // bounce chek
 }
